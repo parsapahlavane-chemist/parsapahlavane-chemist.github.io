@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>دنیای شیمی</title>
+  <meta name="description" content="سایت آموزشی و سرگرم‌کننده درباره شیمی">
+  <style>
+    body{font-family:Tahoma,Arial,Helvetica;background:#f0f4f9;color:#111;margin:0}
+    .container{max-width:900px;margin:24px auto;padding:0 16px}
+    header{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
+    nav a{margin-left:12px;text-decoration:none;color:#111}
+    .card{background:#fff;padding:16px;border-radius:8px;box-shadow:0 4px 14px rgba(0,0,0,.06);margin-bottom:12px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    @media(max-width:800px){.grid{grid-template-columns:1fr}}
+    button,a.cta{display:inline-block;background:#0a74da;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+    form{display:flex;flex-direction:column;gap:8px}
+    input,textarea{padding:8px;border-radius:6px;border:1px solid #ddd}
+    footer{text-align:center;color:#666;padding:12px 0}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div style="font-weight:700">🔬 دنیای شیمی</div>
+      <nav><a href="#home">خانه</a><a href="#articles">مقالات</a><a href="#experiments">آزمایش‌ها</a><a href="#contact">تماس</a></nav>
+    </header>
+
+    <section class="card" id="home">
+      <h1>به دنیای شیمی خوش آمدید!</h1>
+      <p>اینجا می‌تونید با دنیای جذاب شیمی، آزمایش‌های جالب و مفاهیم علمی به زبان ساده آشنا بشید.</p>
+      <a class="cta" href="#articles">شروع یادگیری</a>
+    </section>
+
+    <section class="grid" id="articles">
+      <div class="card">
+        <h3>مقاله: جدول تناوبی</h3>
+        <p>جدول تناوبی عناصر یکی از پایه‌های اصلی علم شیمی است که عناصر را بر اساس عدد اتمی مرتب می‌کند.</p>
+      </div>
+      <div class="card">
+        <h3>مقاله: واکنش‌های اسید و باز</h3>
+        <p>اسیدها و بازها در زندگی روزمره نقش مهمی دارند، از آبلیمو تا صابون!</p>
+      </div>
+      <div class="card">
+        <h3>مقاله: پیوندهای شیمیایی</h3>
+        <p>اتم‌ها برای پایدار شدن به هم می‌پیوندند؛ پیوند کووالانسی، یونی و فلزی سه نوع اصلی هستند.</p>
+      </div>
+    </section>
+
+    <section class="grid" id="experiments">
+      <div class="card">
+        <h3>آزمایش رنگین‌کمان pH</h3>
+        <p>با استفاده از کلم قرمز می‌تونی نشانگر طبیعی اسید و باز درست کنی!</p>
+      </div>
+      <div class="card">
+        <h3>آزمایش آتش رنگی</h3>
+        <p>نمک‌های فلزی رنگ شعله را تغییر می‌دهند؛ مثلاً مس شعله سبز می‌سازد.</p>
+      </div>
+      <div class="card">
+        <h3>آزمایش فوم فیل</h3>
+        <p>ترکیب هیدروژن پراکسید و ید پتاسیم باعث تولید حجم زیادی کف می‌شود.</p>
+      </div>
+    </section>
+
+    <section class="card" id="contact">
+      <h2>تماس با ما</h2>
+      <form onsubmit="event.preventDefault();alert('پیام شما ثبت شد (نمونه)')">
+        <input placeholder="نام" required>
+        <input placeholder="ایمیل" type="email" required>
+        <textarea placeholder="پیام" rows="4"></textarea>
+        <button class="cta" type="submit">ارسال</button>
+      </form>
+    </section>
+
+    <footer>© 2025 — دنیای شیمی | آموزش برای همه</footer>
+  </div>
+</body>
+</html>
